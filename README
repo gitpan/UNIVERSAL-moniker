@@ -1,3 +1,8 @@
+NEWS: You don't need Lingua::EN::Inflect
+
+By popular demand.  If you want plurals, you'll need it.
+
+==============================================================================
 NEWS: Now works with older Perl versions!
 
 I've eliminated the 'use warnings'; we didn't really need it.

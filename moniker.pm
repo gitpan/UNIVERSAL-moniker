@@ -1,5 +1,5 @@
 package UNIVERSAL::moniker;
-$UNIVERSAL::moniker::VERSION = '0.03';
+$UNIVERSAL::moniker::VERSION = '0.04';
 
 =head1 NAME
 
@@ -37,8 +37,6 @@ So, if $ob->isa("Cephalopod::Octopus"), C<plural_moniker> will return "octopuses
 =cut
 
 package UNIVERSAL;
-use strict;
-use warnings;
 use Lingua::EN::Inflect 'PL';
 
 sub moniker {

@@ -1,5 +1,5 @@
-moniker.pm
 MANIFEST
 Makefile.PL
-test.pl
 README
+moniker.pm
+t/moniker.t

@@ -1,3 +1,10 @@
+NEWS: Now works with older Perl versions!
+
+I've eliminated the 'use warnings'; we didn't really need it.
+Thanks to Schwern and Miyagawa.
+
+==============================================================================
+
 In object oriented abstractions you often model real things as Perl classes.
 Unfortunately, the Perl classes have uglier names than the real things do.
 
@@ -17,7 +24,7 @@ called in the real world.
 	my $o = Cephalopod::Octopus->new;
 	$o->plural_moniker eq "octopuses";
 
-=======================================================================
+==============================================================================
 
 NAME
     UNIVERSAL::moniker

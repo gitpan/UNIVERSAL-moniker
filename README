@@ -1,3 +1,7 @@
+D'oh!  If you choose to install without Lingua::EN::Inflect, the tests
+don't pass.  Now (in 0.06) they do.
+
+==============================================================================
 NEWS: You don't need Lingua::EN::Inflect
 
 By popular demand.  If you want plurals, you'll need it.

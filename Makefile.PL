@@ -3,7 +3,5 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     'NAME'	=> 'UNIVERSAL::moniker',
-    'VERSION'	=> '0.01',
-    'PREREQ_PM'	=> {
-    },
+    'VERSION_FROM'	=> 'moniker.pm',
 );

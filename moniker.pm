@@ -1,5 +1,5 @@
 package UNIVERSAL::moniker;
-$UNIVERSAL::moniker::VERSION = '0.02';
+$UNIVERSAL::moniker::VERSION = '0.03';
 
 =head1 NAME
 

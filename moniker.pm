@@ -1,5 +1,5 @@
 package UNIVERSAL::moniker;
-$UNIVERSAL::moniker::VERSION = '0.06';
+$UNIVERSAL::moniker::VERSION = '0.07';
 
 =head1 NAME
 
@@ -34,14 +34,15 @@ So, if $ob->isa("Big::Scary::Animal"), C<moniker> will return "animal".
 Returns the plural moniker for $ob.
 So, if $ob->isa("Cephalopod::Octopus"), C<plural_moniker> will return "octopuses".
 
+(You need to install Lingua::EN::Inflect for this to work.)
+
 =cut
 
 package UNIVERSAL;
 
 sub moniker {
-	my ($self) = @_;
-        my @parts = split /::/, (ref($self) || $self);
-	return lc pop @parts;
+    (ref( $_[0] ) || $_[0]) =~ /([^:]+)$/;
+    return lc $1;
 }
 
 sub plural_moniker {
@@ -49,14 +50,17 @@ sub plural_moniker {
 	return Lingua::EN::Inflect::PL($_[0]->moniker);
 }
 
-=head1 AUTHOR
+=head1 AUTHORS
 
 Marty Pauley <marty+perl@kasei.com>,
 Tony Bowden <tony@kasei.com>,
+Elizabeth Mattijsen <liz@dijkmat.nl>
+
+(Yes, 3 authors for such a small module!)
 
 =head1 COPYRIGHT
 
-  Copyright (C) 2003 Kasei
+  Copyright (C) 2004 Kasei
 
   This program is free software; you can redistribute it under the same terms as
   Perl.

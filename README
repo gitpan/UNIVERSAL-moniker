@@ -1,19 +1,3 @@
-D'oh!  If you choose to install without Lingua::EN::Inflect, the tests
-don't pass.  Now (in 0.06) they do.
-
-==============================================================================
-NEWS: You don't need Lingua::EN::Inflect
-
-By popular demand.  If you want plurals, you'll need it.
-
-==============================================================================
-NEWS: Now works with older Perl versions!
-
-I've eliminated the 'use warnings'; we didn't really need it.
-Thanks to Schwern and Miyagawa.
-
-==============================================================================
-
 In object oriented abstractions you often model real things as Perl classes.
 Unfortunately, the Perl classes have uglier names than the real things do.
 
@@ -64,11 +48,16 @@ DESCRIPTION
     $ob->isa("Cephalopod::Octopus"), "plural_moniker" will return
     "octopuses".
 
-AUTHOR
+    (You need to install Lingua::EN::Inflect for this to work.)
+
+AUTHORS
     Marty Pauley <marty+perl@kasei.com>, Tony Bowden <tony@kasei.com>,
+    Elizabeth Mattijsen <liz@dijkmat.nl>
+
+    (Yes, 3 authors for such a small module!)
 
 COPYRIGHT
-      Copyright (C) 2003 Kasei
+      Copyright (C) 2004 Kasei
 
       This program is free software; you can redistribute it under the same terms as
       Perl.
